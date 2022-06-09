@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{04B17470-CB82-4724-904B-25445926AB86}</ProjectGuid>
+    <RootNamespace>ImGuiDirectX11KieroHook</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Sapphire ImGUI</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x64;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <OutDir>C:/DESTINY</OutDir>
+    <TargetName>sapphire_imgui</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x64;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>d3d11.lib;dxgi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>d3d11.lib;dxgi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>d3d11.lib;dxgi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>d3d11.lib;dxgi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="imgui\imgui.cpp" />
+    <ClCompile Include="imgui\imgui_demo.cpp" />
+    <ClCompile Include="imgui\imgui_draw.cpp" />
+    <ClCompile Include="imgui\imgui_impl_dx11.cpp" />
+    <ClCompile Include="imgui\imgui_impl_win32.cpp" />
+    <ClCompile Include="imgui\imgui_widgets.cpp" />
+    <ClCompile Include="impl\hooks\fn\hk_bce_client_init.cpp" />
+    <ClCompile Include="impl\hooks\fn\hk_bp_client_input.cpp" />
+    <ClCompile Include="impl\hooks\fn\hk_ddraw_ongui.cpp" />
+    <ClCompile Include="impl\hooks\fn\hk_launch_projectile.cpp" />
+    <ClCompile Include="impl\hooks\fn\hk_on_attacked.cpp" />
+    <ClCompile Include="impl\hooks\fn\hk_projectile_shoot_rpc.cpp" />
+    <ClCompile Include="kiero\kiero.cpp" />
+    <ClCompile Include="kiero\minhook\src\buffer.c" />
+    <ClCompile Include="kiero\minhook\src\hde\hde32.c" />
+    <ClCompile Include="kiero\minhook\src\hde\hde64.c" />
+    <ClCompile Include="kiero\minhook\src\hook.c" />
+    <ClCompile Include="kiero\minhook\src\trampoline.c" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="rust\features\hitmarkers.cpp" />
+    <ClCompile Include="rust\features\silent_aim.cpp" />
+    <ClCompile Include="rust\features\visuals.cpp" />
+    <ClCompile Include="shared\chaiscript\system\chai_wrapper.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="kiero\minhook\dll_resources\MinHook.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="kiero\minhook\dll_resources\MinHook.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="imgui\imconfig.h" />
+    <ClInclude Include="imgui\imgui.h" />
+    <ClInclude Include="imgui\imgui_impl_dx11.h" />
+    <ClInclude Include="imgui\imgui_impl_win32.h" />
+    <ClInclude Include="imgui\imgui_internal.h" />
+    <ClInclude Include="imgui\imstb_rectpack.h" />
+    <ClInclude Include="imgui\imstb_textedit.h" />
+    <ClInclude Include="imgui\imstb_truetype.h" />
+    <ClInclude Include="impl\hooks\hooks.hpp" />
+    <ClInclude Include="impl\hooks\sapphire_hook.hpp" />
+    <ClInclude Include="includes.h" />
+    <ClInclude Include="kiero\kiero.h" />
+    <ClInclude Include="kiero\minhook\include\MinHook.h" />
+    <ClInclude Include="kiero\minhook\src\buffer.h" />
+    <ClInclude Include="kiero\minhook\src\hde\hde32.h" />
+    <ClInclude Include="kiero\minhook\src\hde\hde64.h" />
+    <ClInclude Include="kiero\minhook\src\hde\pstdint.h" />
+    <ClInclude Include="kiero\minhook\src\hde\table32.h" />
+    <ClInclude Include="kiero\minhook\src\hde\table64.h" />
+    <ClInclude Include="kiero\minhook\src\trampoline.h" />
+    <ClInclude Include="rust\classes\c_base_player.hpp" />
+    <ClInclude Include="rust\classes\c_base_projectile.hpp" />
+    <ClInclude Include="rust\classes\c_base_weapon.hpp" />
+    <ClInclude Include="rust\classes\c_hit_info.hpp" />
+    <ClInclude Include="rust\classes\c_item_definition.hpp" />
+    <ClInclude Include="rust\classes\c_item_mod_projectile.hpp" />
+    <ClInclude Include="rust\classes\c_model_state.hpp" />
+    <ClInclude Include="rust\classes\c_networkable.hpp" />
+    <ClInclude Include="rust\classes\c_player_eyes.hpp" />
+    <ClInclude Include="rust\classes\c_projectile.hpp" />
+    <ClInclude Include="rust\classes\c_transform.hpp" />
+    <ClInclude Include="rust\classes\c_walk_movement.hpp" />
+    <ClInclude Include="rust\enums\enums.hpp" />
+    <ClInclude Include="rust\features\hitmarkers.hpp" />
+    <ClInclude Include="rust\features\notifications.hpp" />
+    <ClInclude Include="rust\features\silent_aim.hpp" />
+    <ClInclude Include="rust\features\visuals.hpp" />
+    <ClInclude Include="rust\include.hpp" />
+    <ClInclude Include="rust\rust.hpp" />
+    <ClInclude Include="sapphire\globals.hpp" />
+    <ClInclude Include="sapphire\settings.h" />
+    <ClInclude Include="shared\chaiscript\include\chaiscript.hpp" />
+    <ClInclude Include="shared\chaiscript\include\chaiscript_basic.hpp" />
+    <ClInclude Include="shared\chaiscript\include\chaiscript_defines.hpp" />
+    <ClInclude Include="shared\chaiscript\include\chaiscript_stdlib.hpp" />
+    <ClInclude Include="shared\chaiscript\include\chaiscript_threading.hpp" />
+    <ClInclude Include="shared\chaiscript\include\dispatchkit\any.hpp" />
+    <ClInclude Include="shared\chaiscript\include\dispatchkit\bad_boxed_cast.hpp" />
+    <ClInclude Include="shared\chaiscript\include\dispatchkit\bind_first.hpp" />
+    <ClInclude Include="shared\chaiscript\include\dispatchkit\bootstrap.hpp" />
+    <ClInclude Include="shared\chaiscript\include\dispatchkit\bootstrap_stl.hpp" />
+    <ClInclude Include="shared\chaiscript\include\dispatchkit\boxed_cast.hpp" />
+    <ClInclude Include="shared\chaiscript\include\dispatchkit\boxed_cast_helper.hpp" />
+    <ClInclude Include="shared\chaiscript\include\dispatchkit\boxed_number.hpp" />
+    <ClInclude Include="shared\chaiscript\include\dispatchkit\boxed_value.hpp" />
+    <ClInclude Include="shared\chaiscript\include\dispatchkit\callable_traits.hpp" />
+    <ClInclude Include="shared\chaiscript\include\dispatchkit\dispatchkit.hpp" />
+    <ClInclude Include="shared\chaiscript\include\dispatchkit\dynamic_object.hpp" />
+    <ClInclude Include="shared\chaiscript\include\dispatchkit\dynamic_object_detail.hpp" />
+    <ClInclude Include="shared\chaiscript\include\dispatchkit\exception_specification.hpp" />
+    <ClInclude Include="shared\chaiscript\include\dispatchkit\function_call.hpp" />
+    <ClInclude Include="shared\chaiscript\include\dispatchkit\function_call_detail.hpp" />
+    <ClInclude Include="shared\chaiscript\include\dispatchkit\handle_return.hpp" />
+    <ClInclude Include="shared\chaiscript\include\dispatchkit\operators.hpp" />
+    <ClInclude Include="shared\chaiscript\include\dispatchkit\proxy_constructors.hpp" />
+    <ClInclude Include="shared\chaiscript\include\dispatchkit\proxy_functions.hpp" />
+    <ClInclude Include="shared\chaiscript\include\dispatchkit\proxy_functions_detail.hpp" />
+    <ClInclude Include="shared\chaiscript\include\dispatchkit\register_function.hpp" />
+    <ClInclude Include="shared\chaiscript\include\dispatchkit\short_alloc.hpp" />
+    <ClInclude Include="shared\chaiscript\include\dispatchkit\type_conversions.hpp" />
+    <ClInclude Include="shared\chaiscript\include\dispatchkit\type_info.hpp" />
+    <ClInclude Include="shared\chaiscript\include\language\chaiscript_algebraic.hpp" />
+    <ClInclude Include="shared\chaiscript\include\language\chaiscript_common.hpp" />
+    <ClInclude Include="shared\chaiscript\include\language\chaiscript_engine.hpp" />
+    <ClInclude Include="shared\chaiscript\include\language\chaiscript_eval.hpp" />
+    <ClInclude Include="shared\chaiscript\include\language\chaiscript_optimizer.hpp" />
+    <ClInclude Include="shared\chaiscript\include\language\chaiscript_parser.hpp" />
+    <ClInclude Include="shared\chaiscript\include\language\chaiscript_posix.hpp" />
+    <ClInclude Include="shared\chaiscript\include\language\chaiscript_prelude.hpp" />
+    <ClInclude Include="shared\chaiscript\include\language\chaiscript_prelude_docs.hpp" />
+    <ClInclude Include="shared\chaiscript\include\language\chaiscript_tracer.hpp" />
+    <ClInclude Include="shared\chaiscript\include\language\chaiscript_unknown.hpp" />
+    <ClInclude Include="shared\chaiscript\include\language\chaiscript_windows.hpp" />
+    <ClInclude Include="shared\chaiscript\include\utility\fnv1a.hpp" />
+    <ClInclude Include="shared\chaiscript\include\utility\json.hpp" />
+    <ClInclude Include="shared\chaiscript\include\utility\json_wrap.hpp" />
+    <ClInclude Include="shared\chaiscript\include\utility\static_string.hpp" />
+    <ClInclude Include="shared\chaiscript\include\utility\utility.hpp" />
+    <ClInclude Include="shared\chaiscript\system\chai_wrapper.hpp" />
+    <ClInclude Include="shared\chaiscript\wrappers\chai_base_player.hpp" />
+    <ClInclude Include="shared\chaiscript\wrappers\chai_renderer.hpp" />
+    <ClInclude Include="shared\unity\rendering\color.hpp" />
+    <ClInclude Include="shared\unity\rendering\unity_gl.hpp" />
+    <ClInclude Include="shared\unity\rendering\unity_gui.hpp" />
+    <ClInclude Include="shared\unity\unity_sdk.hpp" />
+    <ClInclude Include="shared\utl\il2cpp_lib.hpp" />
+    <ClInclude Include="shared\utl\pattern.hpp" />
+    <ClInclude Include="shared\utl\sapphire_crt.hpp" />
+    <ClInclude Include="shared\utl\sapphire_importer.hpp" />
+    <ClInclude Include="shared\utl\system.hpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

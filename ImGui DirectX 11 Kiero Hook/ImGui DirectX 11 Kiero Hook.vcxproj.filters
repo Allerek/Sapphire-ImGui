@@ -1,0 +1,472 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="kiero">
+      <UniqueIdentifier>{c914abae-6128-4a2a-8821-07a38f656930}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="imgui">
+      <UniqueIdentifier>{3ba57e14-8ac2-485a-b12c-f06690c43d6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shared">
+      <UniqueIdentifier>{5adf23f5-e3ec-40f8-bb14-d86b116c03f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shared\chaiscript">
+      <UniqueIdentifier>{1cbb0d32-42e2-4579-b60a-dfc536590796}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shared\chaiscript\include">
+      <UniqueIdentifier>{7cae0f6a-1110-4f70-aa59-0fbd6ce2222b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shared\chaiscript\include\dispatchkit">
+      <UniqueIdentifier>{835038ce-e4cd-4ac2-bc0a-9a8b3e8be5a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shared\chaiscript\include\language">
+      <UniqueIdentifier>{cbca6093-88b9-4082-8f21-d140cee7d9dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shared\chaiscript\include\utility">
+      <UniqueIdentifier>{a02250f8-c1ea-4676-8e93-7d1d4d8309e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shared\unity">
+      <UniqueIdentifier>{7bbde062-d4ca-4f4a-8197-1023164baec0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shared\unity\rendering">
+      <UniqueIdentifier>{59ce28e7-1bd4-4693-a18b-fa07fb8485a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shared\utl">
+      <UniqueIdentifier>{ac67c9da-c515-46f4-9fa1-2f18cd8b79a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sapphire">
+      <UniqueIdentifier>{3da5f872-d989-4357-9a63-19284450a1f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rust">
+      <UniqueIdentifier>{690c02fe-3936-4583-be97-f3f85794ef36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rust\classes">
+      <UniqueIdentifier>{cacdc788-ce1a-4081-98c4-b9797442d7a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rust\enums">
+      <UniqueIdentifier>{1368f984-0c0b-4de7-b12e-83bf00bd1d28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rust\features">
+      <UniqueIdentifier>{b7416881-ed60-46ac-94a8-b982884fece7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="math">
+      <UniqueIdentifier>{eee80e6f-3b51-4873-8b31-ef2287ef340a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="math\matrix">
+      <UniqueIdentifier>{cdd57418-cc5e-4833-bf10-96884d0f5a92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="math\vector">
+      <UniqueIdentifier>{605ec931-b52d-4c94-97cb-c1c5931eec1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="impl">
+      <UniqueIdentifier>{e09452fc-f859-4de6-bab0-0cdc33ba34a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="impl\hooks">
+      <UniqueIdentifier>{48b9a515-be37-4456-986d-8e7f4a7309e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="impl\hooks\fn">
+      <UniqueIdentifier>{8b142404-8eaa-4e9b-9f06-eafe82c4e58b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shared\chaiscript\system">
+      <UniqueIdentifier>{195882f4-c115-4a8a-a1a5-146e7367f8c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shared\chaiscript\wrappers">
+      <UniqueIdentifier>{05cc165e-729a-4ce9-b8c8-4ff44c6df622}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="kiero\minhook\src\buffer.c">
+      <Filter>kiero</Filter>
+    </ClCompile>
+    <ClCompile Include="kiero\minhook\src\hde\hde32.c">
+      <Filter>kiero</Filter>
+    </ClCompile>
+    <ClCompile Include="kiero\minhook\src\hde\hde64.c">
+      <Filter>kiero</Filter>
+    </ClCompile>
+    <ClCompile Include="kiero\minhook\src\hook.c">
+      <Filter>kiero</Filter>
+    </ClCompile>
+    <ClCompile Include="kiero\kiero.cpp">
+      <Filter>kiero</Filter>
+    </ClCompile>
+    <ClCompile Include="kiero\minhook\src\trampoline.c">
+      <Filter>kiero</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_demo.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_draw.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_impl_dx11.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_impl_win32.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_widgets.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="rust\features\hitmarkers.cpp">
+      <Filter>rust\features</Filter>
+    </ClCompile>
+    <ClCompile Include="rust\features\silent_aim.cpp">
+      <Filter>rust\features</Filter>
+    </ClCompile>
+    <ClCompile Include="rust\features\visuals.cpp">
+      <Filter>rust\features</Filter>
+    </ClCompile>
+    <ClCompile Include="impl\hooks\fn\hk_bce_client_init.cpp">
+      <Filter>impl\hooks\fn</Filter>
+    </ClCompile>
+    <ClCompile Include="impl\hooks\fn\hk_bp_client_input.cpp">
+      <Filter>impl\hooks\fn</Filter>
+    </ClCompile>
+    <ClCompile Include="impl\hooks\fn\hk_ddraw_ongui.cpp">
+      <Filter>impl\hooks\fn</Filter>
+    </ClCompile>
+    <ClCompile Include="impl\hooks\fn\hk_launch_projectile.cpp">
+      <Filter>impl\hooks\fn</Filter>
+    </ClCompile>
+    <ClCompile Include="impl\hooks\fn\hk_on_attacked.cpp">
+      <Filter>impl\hooks\fn</Filter>
+    </ClCompile>
+    <ClCompile Include="impl\hooks\fn\hk_projectile_shoot_rpc.cpp">
+      <Filter>impl\hooks\fn</Filter>
+    </ClCompile>
+    <ClCompile Include="shared\chaiscript\system\chai_wrapper.cpp">
+      <Filter>shared\chaiscript\system</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="kiero\minhook\dll_resources\MinHook.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="kiero\minhook\src\buffer.h">
+      <Filter>kiero</Filter>
+    </ClInclude>
+    <ClInclude Include="kiero\minhook\src\hde\hde32.h">
+      <Filter>kiero</Filter>
+    </ClInclude>
+    <ClInclude Include="kiero\minhook\src\hde\hde64.h">
+      <Filter>kiero</Filter>
+    </ClInclude>
+    <ClInclude Include="kiero\kiero.h">
+      <Filter>kiero</Filter>
+    </ClInclude>
+    <ClInclude Include="kiero\minhook\include\MinHook.h">
+      <Filter>kiero</Filter>
+    </ClInclude>
+    <ClInclude Include="kiero\minhook\src\hde\pstdint.h">
+      <Filter>kiero</Filter>
+    </ClInclude>
+    <ClInclude Include="kiero\minhook\src\hde\table32.h">
+      <Filter>kiero</Filter>
+    </ClInclude>
+    <ClInclude Include="kiero\minhook\src\hde\table64.h">
+      <Filter>kiero</Filter>
+    </ClInclude>
+    <ClInclude Include="kiero\minhook\src\trampoline.h">
+      <Filter>kiero</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imconfig.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_impl_dx11.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_impl_win32.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_internal.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imstb_rectpack.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imstb_textedit.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imstb_truetype.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="shared\chaiscript\include\dispatchkit\any.hpp">
+      <Filter>shared\chaiscript\include\dispatchkit</Filter>
+    </ClInclude>
+    <ClInclude Include="shared\chaiscript\include\dispatchkit\bad_boxed_cast.hpp">
+      <Filter>shared\chaiscript\include\dispatchkit</Filter>
+    </ClInclude>
+    <ClInclude Include="shared\chaiscript\include\dispatchkit\bind_first.hpp">
+      <Filter>shared\chaiscript\include\dispatchkit</Filter>
+    </ClInclude>
+    <ClInclude Include="shared\chaiscript\include\dispatchkit\bootstrap.hpp">
+      <Filter>shared\chaiscript\include\dispatchkit</Filter>
+    </ClInclude>
+    <ClInclude Include="shared\chaiscript\include\dispatchkit\bootstrap_stl.hpp">
+      <Filter>shared\chaiscript\include\dispatchkit</Filter>
+    </ClInclude>
+    <ClInclude Include="shared\chaiscript\include\dispatchkit\boxed_cast.hpp">
+      <Filter>shared\chaiscript\include\dispatchkit</Filter>
+    </ClInclude>
+    <ClInclude Include="shared\chaiscript\include\dispatchkit\boxed_cast_helper.hpp">
+      <Filter>shared\chaiscript\include\dispatchkit</Filter>
+    </ClInclude>
+    <ClInclude Include="shared\chaiscript\include\dispatchkit\boxed_number.hpp">
+      <Filter>shared\chaiscript\include\dispatchkit</Filter>
+    </ClInclude>
+    <ClInclude Include="shared\chaiscript\include\dispatchkit\boxed_value.hpp">
+      <Filter>shared\chaiscript\include\dispatchkit</Filter>
+    </ClInclude>
+    <ClInclude Include="shared\chaiscript\include\dispatchkit\callable_traits.hpp">
+      <Filter>shared\chaiscript\include\dispatchkit</Filter>
+    </ClInclude>
+    <ClInclude Include="shared\chaiscript\include\dispatchkit\dispatchkit.hpp">
+      <Filter>shared\chaiscript\include\dispatchkit</Filter>
+    </ClInclude>
+    <ClInclude Include="shared\chaiscript\include\dispatchkit\dynamic_object.hpp">
+      <Filter>shared\chaiscript\include\dispatchkit</Filter>
+    </ClInclude>
+    <ClInclude Include="shared\chaiscript\include\dispatchkit\dynamic_object_detail.hpp">
+      <Filter>shared\chaiscript\include\dispatchkit</Filter>
+    </ClInclude>
+    <ClInclude Include="shared\chaiscript\include\dispatchkit\exception_specification.hpp">
+      <Filter>shared\chaiscript\include\dispatchkit</Filter>
+    </ClInclude>
+    <ClInclude Include="shared\chaiscript\include\dispatchkit\function_call.hpp">
+      <Filter>shared\chaiscript\include\dispatchkit</Filter>
+    </ClInclude>
+    <ClInclude Include="shared\chaiscript\include\dispatchkit\function_call_detail.hpp">
+      <Filter>shared\chaiscript\include\dispatchkit</Filter>
+    </ClInclude>
+    <ClInclude Include="shared\chaiscript\include\dispatchkit\handle_return.hpp">
+      <Filter>shared\chaiscript\include\dispatchkit</Filter>
+    </ClInclude>
+    <ClInclude Include="shared\chaiscript\include\dispatchkit\operators.hpp">
+      <Filter>shared\chaiscript\include\dispatchkit</Filter>
+    </ClInclude>
+    <ClInclude Include="shared\chaiscript\include\dispatchkit\proxy_constructors.hpp">
+      <Filter>shared\chaiscript\include\dispatchkit</Filter>
+    </ClInclude>
+    <ClInclude Include="shared\chaiscript\include\dispatchkit\proxy_functions.hpp">
+      <Filter>shared\chaiscript\include\dispatchkit</Filter>
+    </ClInclude>
+    <ClInclude Include="shared\chaiscript\include\dispatchkit\proxy_functions_detail.hpp">
+      <Filter>shared\chaiscript\include\dispatchkit</Filter>
+    </ClInclude>
+    <ClInclude Include="shared\chaiscript\include\dispatchkit\register_function.hpp">
+      <Filter>shared\chaiscript\include\dispatchkit</Filter>
+    </ClInclude>
+    <ClInclude Include="shared\chaiscript\include\dispatchkit\short_alloc.hpp">
+      <Filter>shared\chaiscript\include\dispatchkit</Filter>
+    </ClInclude>
+    <ClInclude Include="shared\chaiscript\include\dispatchkit\type_conversions.hpp">
+      <Filter>shared\chaiscript\include\dispatchkit</Filter>
+    </ClInclude>
+    <ClInclude Include="shared\chaiscript\include\dispatchkit\type_info.hpp">
+      <Filter>shared\chaiscript\include\dispatchkit</Filter>
+    </ClInclude>
+    <ClInclude Include="shared\chaiscript\include\language\chaiscript_algebraic.hpp">
+      <Filter>shared\chaiscript\include\language</Filter>
+    </ClInclude>
+    <ClInclude Include="shared\chaiscript\include\language\chaiscript_common.hpp">
+      <Filter>shared\chaiscript\include\language</Filter>
+    </ClInclude>
+    <ClInclude Include="shared\chaiscript\include\language\chaiscript_engine.hpp">
+      <Filter>shared\chaiscript\include\language</Filter>
+    </ClInclude>
+    <ClInclude Include="shared\chaiscript\include\language\chaiscript_eval.hpp">
+      <Filter>shared\chaiscript\include\language</Filter>
+    </ClInclude>
+    <ClInclude Include="shared\chaiscript\include\language\chaiscript_optimizer.hpp">
+      <Filter>shared\chaiscript\include\language</Filter>
+    </ClInclude>
+    <ClInclude Include="shared\chaiscript\include\language\chaiscript_parser.hpp">
+      <Filter>shared\chaiscript\include\language</Filter>
+    </ClInclude>
+    <ClInclude Include="shared\chaiscript\include\language\chaiscript_posix.hpp">
+      <Filter>shared\chaiscript\include\language</Filter>
+    </ClInclude>
+    <ClInclude Include="shared\chaiscript\include\language\chaiscript_prelude.hpp">
+      <Filter>shared\chaiscript\include\language</Filter>
+    </ClInclude>
+    <ClInclude Include="shared\chaiscript\include\language\chaiscript_prelude_docs.hpp">
+      <Filter>shared\chaiscript\include\language</Filter>
+    </ClInclude>
+    <ClInclude Include="shared\chaiscript\include\language\chaiscript_tracer.hpp">
+      <Filter>shared\chaiscript\include\language</Filter>
+    </ClInclude>
+    <ClInclude Include="shared\chaiscript\include\language\chaiscript_unknown.hpp">
+      <Filter>shared\chaiscript\include\language</Filter>
+    </ClInclude>
+    <ClInclude Include="shared\chaiscript\include\language\chaiscript_windows.hpp">
+      <Filter>shared\chaiscript\include\language</Filter>
+    </ClInclude>
+    <ClInclude Include="shared\chaiscript\include\utility\fnv1a.hpp">
+      <Filter>shared\chaiscript\include\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="shared\chaiscript\include\utility\json.hpp">
+      <Filter>shared\chaiscript\include\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="shared\chaiscript\include\utility\json_wrap.hpp">
+      <Filter>shared\chaiscript\include\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="shared\chaiscript\include\utility\static_string.hpp">
+      <Filter>shared\chaiscript\include\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="shared\chaiscript\include\utility\utility.hpp">
+      <Filter>shared\chaiscript\include\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="shared\chaiscript\include\chaiscript.hpp">
+      <Filter>shared\chaiscript\include</Filter>
+    </ClInclude>
+    <ClInclude Include="shared\chaiscript\include\chaiscript_basic.hpp">
+      <Filter>shared\chaiscript\include</Filter>
+    </ClInclude>
+    <ClInclude Include="shared\chaiscript\include\chaiscript_defines.hpp">
+      <Filter>shared\chaiscript\include</Filter>
+    </ClInclude>
+    <ClInclude Include="shared\chaiscript\include\chaiscript_stdlib.hpp">
+      <Filter>shared\chaiscript\include</Filter>
+    </ClInclude>
+    <ClInclude Include="shared\chaiscript\include\chaiscript_threading.hpp">
+      <Filter>shared\chaiscript\include</Filter>
+    </ClInclude>
+    <ClInclude Include="shared\unity\unity_sdk.hpp">
+      <Filter>shared\unity</Filter>
+    </ClInclude>
+    <ClInclude Include="shared\unity\rendering\color.hpp">
+      <Filter>shared\unity\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="shared\unity\rendering\unity_gl.hpp">
+      <Filter>shared\unity\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="shared\unity\rendering\unity_gui.hpp">
+      <Filter>shared\unity\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="shared\utl\il2cpp_lib.hpp">
+      <Filter>shared\utl</Filter>
+    </ClInclude>
+    <ClInclude Include="shared\utl\pattern.hpp">
+      <Filter>shared\utl</Filter>
+    </ClInclude>
+    <ClInclude Include="shared\utl\sapphire_crt.hpp">
+      <Filter>shared\utl</Filter>
+    </ClInclude>
+    <ClInclude Include="shared\utl\sapphire_importer.hpp">
+      <Filter>shared\utl</Filter>
+    </ClInclude>
+    <ClInclude Include="shared\utl\system.hpp">
+      <Filter>shared\utl</Filter>
+    </ClInclude>
+    <ClInclude Include="sapphire\globals.hpp">
+      <Filter>sapphire</Filter>
+    </ClInclude>
+    <ClInclude Include="sapphire\settings.h">
+      <Filter>sapphire</Filter>
+    </ClInclude>
+    <ClInclude Include="rust\features\hitmarkers.hpp">
+      <Filter>rust\features</Filter>
+    </ClInclude>
+    <ClInclude Include="rust\features\notifications.hpp">
+      <Filter>rust\features</Filter>
+    </ClInclude>
+    <ClInclude Include="rust\features\silent_aim.hpp">
+      <Filter>rust\features</Filter>
+    </ClInclude>
+    <ClInclude Include="rust\features\visuals.hpp">
+      <Filter>rust\features</Filter>
+    </ClInclude>
+    <ClInclude Include="rust\enums\enums.hpp">
+      <Filter>rust\enums</Filter>
+    </ClInclude>
+    <ClInclude Include="rust\classes\c_base_player.hpp">
+      <Filter>rust\classes</Filter>
+    </ClInclude>
+    <ClInclude Include="rust\classes\c_base_projectile.hpp">
+      <Filter>rust\classes</Filter>
+    </ClInclude>
+    <ClInclude Include="rust\classes\c_base_weapon.hpp">
+      <Filter>rust\classes</Filter>
+    </ClInclude>
+    <ClInclude Include="rust\classes\c_hit_info.hpp">
+      <Filter>rust\classes</Filter>
+    </ClInclude>
+    <ClInclude Include="rust\classes\c_item_definition.hpp">
+      <Filter>rust\classes</Filter>
+    </ClInclude>
+    <ClInclude Include="rust\classes\c_item_mod_projectile.hpp">
+      <Filter>rust\classes</Filter>
+    </ClInclude>
+    <ClInclude Include="rust\classes\c_model_state.hpp">
+      <Filter>rust\classes</Filter>
+    </ClInclude>
+    <ClInclude Include="rust\classes\c_networkable.hpp">
+      <Filter>rust\classes</Filter>
+    </ClInclude>
+    <ClInclude Include="rust\classes\c_player_eyes.hpp">
+      <Filter>rust\classes</Filter>
+    </ClInclude>
+    <ClInclude Include="rust\classes\c_projectile.hpp">
+      <Filter>rust\classes</Filter>
+    </ClInclude>
+    <ClInclude Include="rust\classes\c_transform.hpp">
+      <Filter>rust\classes</Filter>
+    </ClInclude>
+    <ClInclude Include="rust\classes\c_walk_movement.hpp">
+      <Filter>rust\classes</Filter>
+    </ClInclude>
+    <ClInclude Include="rust\include.hpp">
+      <Filter>rust</Filter>
+    </ClInclude>
+    <ClInclude Include="rust\rust.hpp">
+      <Filter>rust</Filter>
+    </ClInclude>
+    <ClInclude Include="impl\hooks\hooks.hpp">
+      <Filter>impl\hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="impl\hooks\sapphire_hook.hpp">
+      <Filter>impl\hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="shared\chaiscript\system\chai_wrapper.hpp">
+      <Filter>shared\chaiscript\system</Filter>
+    </ClInclude>
+    <ClInclude Include="shared\chaiscript\wrappers\chai_base_player.hpp">
+      <Filter>shared\chaiscript\wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="shared\chaiscript\wrappers\chai_renderer.hpp">
+      <Filter>shared\chaiscript\wrappers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="kiero\minhook\dll_resources\MinHook.def">
+      <Filter>kiero</Filter>
+    </None>
+  </ItemGroup>
+</Project>
